@@ -1,0 +1,20 @@
+<form method="post">
+  {% csrf_token %}
+  <div>
+    <label>Título</label>
+    <input type="text" name="title">
+  </div>
+  <div>
+    <label>Descrição</label>
+    <textarea name="description"></textarea>
+  </div>
+  <div>
+    <label>Data de Entrega</label>
+    <input type="date" name="due-date">
+  </div>
+  <div>
+    <input type="checkbox" name="done">
+    <label>Feita</label>
+  </div>
+  <input type="submit">
+</form>

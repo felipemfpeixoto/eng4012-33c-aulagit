@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Felipe Mussi Ferreira Peixoto</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+  
+</head>
+
+<body>
+  <h4 class="titulo-cinza">Felipe Mussi Ferreira Peixoto</h4>
+  <script src="script.js"></script>
+  <h1>
+    Por que o Willian Arão é maior que o Vasco, Fluminense e Botafogo juntos?
+  </h1>
+
+  <p>Critérios de avaliação: Títulos nacionais e internacionais.</p>
+
+  <b>Títulos conquistados (William arão):</b>
+
+  <ul>
+    <li>1x Copa do Mundo de Clubes da FIFA (Corinthians)</li>
+    <li>3x Copa Libertadores da América (Corinthians e Flamengo)</li>
+    <li>2x Campeão Brasileiro (Flamengo)</li>
+    <li>2x Supercopa do Brasil (Flamengo)</li>
+    <li>1x Campeão Copa do Brasil (Flamengo)</li>
+    <li>2x Recopa Sulamericana (Corinthians e Flamengo)</li>
+  </ul>
+
+  <b>Titulos conquistados (Clubes pequenos RJ):</b>
+
+  <ol>
+    <li>1x Copa Libertadores da América (Vasco)</li>
+    <li>9x Campeão Brasileiro (4x Vasco, 4x Fluminense, 1x Botafogo)</li>
+    <li>2x Campeão Copa do Brasil (Vasco e Fluminense)</li>
+    <li>2x Recopa Sulamericana (Vasco)</li>
+  </ol>
+
+  <em>De acordo com os critérios analisados e, levando em conta a diferença de idade entre o jogador Willian Arão e os
+    clubes centenários aqui em disputa, tendo os clubes participado das competições tratadas muitas vezes mais que nosso
+    humilde atleta, podemos concluir que o jogador possui uma maior quantidade de títulos de reconhecimento
+    internacional, e uma maior variedade de títulos em geral.</em>
+
+  <br>
+  <br>
+
+  <table border="1">
+    <tr>
+      <td>Clube / Jogador</td>
+      <td>Libertas</td>
+      <td>Anos</td>
+    </tr>
+    <tr>
+      <td>Willian Arão</td>
+      <td>3</td>
+      <td>2012, 2019, 2022</td>
+    </tr>
+    <tr>
+      <td>Vasco</td>
+      <td>1</td>
+      <td>1998</td>
+    </tr>
+    <tr>
+      <td>Fluminense</td>
+      <td>0 (HAHAHA)</td>
+      <td>Não tem</td>
+    </tr>
+    <tr>
+      <td>Botafogo</td>
+      <td>0</td>
+      <td>(É Bairro)</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <b>Títulos históricos:</b>
+
+  <ul>
+    {% for title in titles %}
+      <li>{{ title.title }}</li>
+      <a href="/edit_title/{{title.id}}">Editar</a>
+      <a href="/remove_title/{{title.id}}">Remover</a>
+    {% endfor %}
+  </ul>
+
+  <b>Jogadores históricos:</b>
+
+  <ol>
+  {% for person in people %}
+    <li>{{ person.title }}</li>
+    <a href="/edit_person/{{person.id}}">Editar</a>
+    <a href="/remove_person/{{person.id}}">Remover</a>
+  {% endfor %}
+  </ol>
+
+  <br>
+
+  <a href="https://www.transfermarkt.com.br/willian-arao/erfolge/spieler/210747" target="_blank">Willian Arão -
+    Conquistas | Transfermarkt</a>
+
+  <br>
+  <br>
+  <img width="500" src="https://conteudo.imguol.com.br/c/esporte/06/2022/02/06/willian-arao-do-flamengo-no-classico-contra-fluminense-pelo-cariocao-1644180075529_v2_1x1.jpg">
+  <img width="500" src="http://1.bp.blogspot.com/_khkvNiYW8wY/SUAKk9aTXcI/AAAAAAAAAbo/WDJcpfxEOAk/s400/Charge+sacanando+Fluminense,+Vasco+e+Botafogo.jpg">
+  
+  
+  
+</body>
+
+</html>
