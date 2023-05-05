@@ -2,5 +2,5 @@
 
 
 
-# Roda o código
+Roda o código:
  - python3 manage.py run server
