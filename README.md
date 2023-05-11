@@ -17,7 +17,7 @@ shell:
  - exit()
  - python manage.py startapp <nomedoapp>
 
-
+CRIAR A VIEW QUE CHAME O HTML:
 
 Roda o código:
  - python3 manage.py run server
