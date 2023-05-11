@@ -9,7 +9,13 @@ shell:
 
 secrets:
  - key = 'SECRET_KEY'
- - value = código copiado
+ - value = <código copiado>
+
+Criando o app:
+
+shell: 
+ - exit()
+ - python manage.py startapp <nomedoapp>
 
 
 
