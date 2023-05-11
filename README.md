@@ -7,6 +7,9 @@ SECRET_KEY:
 Criar app:
  - python manage.py startapp <nomedoapp>
  
+Registrando os modelos no banco de dados:
+ - python manage.py makemigrations <nomedoapp>
+ - python manage.py migrate
  
 Roda o código:
  - python3 manage.py run server
