@@ -19,10 +19,12 @@ shell:
 
 Criar a view q chame o html da pasta templates:
  
- views.py:
+views.py:
  - def home(request):
  
      return render(request, "home.html")
+ - criar a posta templates e dentro dela colocar o 'home.html'
+ - adicionar o link da pasta templates no settings.py
 
 Roda o código:
  - python3 manage.py run server
