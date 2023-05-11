@@ -4,7 +4,7 @@ shell:
  - python
  - import secrets
  - secrets.token_urlsafe(32)
- copiar o código retornado
+ (copiar o código retornado)
 secrets:
  - key = 'SECRET_KEY'
  - value = código copiado
