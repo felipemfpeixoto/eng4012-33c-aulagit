@@ -21,6 +21,7 @@ Criar a view q chame o html da pasta templates:
  
  views.py:
  - def home(request):
+ 
      return render(request, "home.html")
 
 Roda o código:
