@@ -1,6 +1,6 @@
 # eng4012-33c-aulagit
 Setar a SECRET_KEY:
-shell:
+\nshell:
  - python
  - import secrets
  - secrets.token_urlsafe(32)
